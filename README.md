@@ -11,7 +11,7 @@
      export PATH="/path/to/cmake/bin:/path/to/clang/bin:$PATH"
      ```
 6) Presets are set for Ninja and Clang. If you are using different software, you can edit the `CMakePresets.json` file in the project root to configure your preferred build system or compiler.
-7) Open a terminal, change the directory to the project root, and run the `bash all.sh` command. Alternatively, you can run the scripts separately: `bash configure.sh`, `bash build.sh`, and `bash run.sh`.
+7) Open a terminal, change the directory to the project root, and run `git init` to initialize a new Git repository. After this, run the `bash all.sh` command to configure, build, and run the project. Alternatively, you can run the scripts separately: `bash configure.sh`, `bash build.sh`, and `bash run.sh`.
    - You can pass an argument to each script:
      - `-r` for release mode
      - `-d` for debug mode
