@@ -8,7 +8,7 @@
    - **Windows**: Go to "System Properties" > "Environment Variables" and add the paths to the "Path" variable.
    - **macOS/Linux**: Add the paths to `.bashrc`, `.zshrc`, or `.profile`. For example:
      ```bash
-     export PATH="/path/to/cmake/bin:/path/to/clang/bin:$PATH"
+     export PATH="/path/to/git/bin:/path/to/ninja/bin:/path/to/cmake/bin:/path/to/clang/bin:$PATH"
      ```
 6) Presets are set for Ninja and Clang. If you are using different software, you can edit the `CMakePresets.json` file in the project root to configure your preferred build system or compiler.
 7) Open a terminal, change the directory to the project root, and run `git init` to initialize a new Git repository. After this, run the `bash all.sh` command to configure, build, and run the project. Alternatively, you can run the scripts separately: `bash configure.sh`, `bash build.sh`, and `bash run.sh`.
@@ -22,5 +22,6 @@
      bash run.sh       # Runs in release mode
      ```
    - **Note for Windows users**: Make sure you have a Bash shell installed, such as Git Bash or WSL (Windows Subsystem for Linux).
+   - **Note for Linux users**: You might need to install additional libs: libx11-dev libgl1-mesa-dev libglu1-mesa-dev libudev-dev libxrandr-dev libxcursor-dev libfreetype6-dev.
 
 \* \- You can install this software with your package manager, or by clicking the provided link and following the manual installation instructions.
